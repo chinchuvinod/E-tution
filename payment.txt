@@ -1,0 +1,532 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Augment an Admin Panel Category Flat Bootstrap Responsive Web Template | Forms :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!--clock init-->
+<script src="js/css3clock.js"></script>
+<!--Easy Pie Chart-->
+<!--skycons-icons-->
+<script src="js/skycons.js"></script>
+<!--//skycons-icons-->
+</head> 
+<body>
+ <div class="page-container">
+   <!--/content-inner-->
+	<div class="left-content">
+	   <div class="inner-content">
+		<!-- header-starts -->
+			<div class="header-section">
+						<!--menu-right-->
+						<div class="top_menu">
+						    
+									
+									<script type="text/javascript">
+										 $('.main-search').hide();
+										$('button').click(function (){
+											$('.main-search').show();
+											$('.main-search text').focus();
+										}
+										);
+										$('.close').click(function(){
+											$('.main-search').hide();
+										});
+									</script>
+							<!--/profile_details-->
+								<div class="profile_details_left">
+									<ul class="nofitications-dropdown">
+											<li class="dropdown note dra-down">
+													   <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+												
+																		</div>
+																		<script type="text/javascript">
+			
+																	function DropDown(el) {
+																		this.dd = el;
+																		this.placeholder = this.dd.children('span');
+																		this.opts = this.dd.find('ul.dropdown > li');
+																		this.val = '';
+																		this.index = -1;
+																		this.initEvents();
+																	}
+																	DropDown.prototype = {
+																		initEvents : function() {
+																			var obj = this;
+
+																			obj.dd.on('click', function(event){
+																				$(this).toggleClass('active');
+																				return false;
+																			});
+
+																			obj.opts.on('click',function(){
+																				var opt = $(this);
+																				obj.val = opt.text();
+																				obj.index = opt.index();
+																				obj.placeholder.text(obj.val);
+																			});
+																		},
+																		getValue : function() {
+																			return this.val;
+																		},
+																		getIndex : function() {
+																			return this.index;
+																		}
+																	}
+
+																	$(function() {
+
+																		var dd = new DropDown( $('#dd') );
+
+																		$(document).click(function() {
+																			// all dropdowns
+																			$('.wrapper-dropdown-3').removeClass('active');
+																		});
+
+																	});
+
+																</script>
+										    </li>
+									       
+							
+								   							   		
+							<div class="clearfix"></div>	
+								</ul>
+							</div>
+							<div class="clearfix"></div>	
+							<!--//profile_details-->
+						</div>
+						<!--//menu-right-->
+					<div class="clearfix"></div>
+				</div>
+
+						<!-- //header-ends -->
+							<!--//outer-wp-->
+								<div class="outter-wp">
+											<!--/sub-heard-part-->
+											 <div class="sub-heard-part">
+													   <ol class="breadcrumb m-b-0">
+															<li><a href="index.html">Home</a></li>
+															<li class="active">Forms</li>
+														</ol>
+											</div>	
+											<!--/sub-heard-part-->	
+												<!--/forms-->
+													<div class="forms-main">
+			
+																<!--/forms-inner-->
+													  				<div class="forms-inner">
+																	  <!--/set-1-->
+																		<div class="set-1">
+																			<div class="col-md-6 graph-2">
+																				
+																					<div class="grid-1">
+																							<div class="form-body">
+																										<form class="form-horizontal" action="payamt">
+ 
+																										    <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Card Type</label>
+																										      <div class="col-sm-9"> 
+																										        <select class="form-control"   name="type" style="height: 45px;">
+							                                                	
+								                                                                   		<option>Credit</option>
+									                                                                 	<option>Debit</option>
+										                                                    
+							                                                                        </select>
+																										      </div> 
+																										      </div>
+																										      
+																										       <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Bank</label>
+																										      <div class="col-sm-9"> 
+																										        <input type="text" class="form-control" id = "name" onchange="namevalid(this);"    name="bank" style="height: 45px;">
+																										      </div> 
+																										      <span id="name1"></span>
+																										      </div>
+																										     <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Card Number</label>
+																										      <div class="col-sm-9"> 
+																										        <input type="text" class="form-control"   name="cno" style="height: 45px;" id = "phone" onchange="phvalid(this);" >
+																										      </div> 
+																										     
+																										      </div>
+																										       <span id="ph1"></span>
+																										      <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Cvv</label>
+																										      <div class="col-sm-9"> 
+																										        <input type="text" class="form-control"   name="cvv" style="height: 45px;" id = "cvv" onchange="cvvvalid(this);">
+																										      </div> 
+																										      </div>
+																										      <span id="cvv1"></span>
+																										      <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Expairay Date</label>
+																										      <div class="col-sm-9"> 
+																										        <input type="date" min="${dat }" class="form-control"   name="exp" style="height: 45px;" >
+																										      </div> 
+																										      </div>
+																										      
+																										      <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Amount</label>
+																										      <div class="col-sm-9"> 
+																										        <input type="text" class="form-control" value="${fee }"   name="amount" style="height: 45px;">
+																										      </div> 
+																										      </div>
+																										      
+																										     
+																										        
+																										        <div class="col-sm-offset-2"> 
+																										         <button type="submit" class="btn btn-default">Pay</button>
+																										          </div> 
+																										          </form> 
+																							</div>
+
+																					</div>
+																				</div>
+																				
+																				 <div class="clearfix"> </div>
+																			</div>
+																			 <!--//set-1-->
+																			  <!--/set-2-->
+
+																			<!--//set-3-->
+																			<!--/set-4-->
+										
+																		   <!--//set-4-->
+																		</div>
+																	<!--//forms-inner-->
+																</div> 
+														<!--//forms-->											   
+												</div>
+											<!--//outer-wp-->
+									 <!--footer section start-->
+										
+									<!--footer section end-->
+								</div>
+							</div>
+				<!--//content-inner-->
+			<!--/sidebar-menu-->
+				<div class="sidebar-menu">
+					<header class="logo">
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span id="logo"> <h1>INSIGHT</h1></span> 
+						<!--<img id="logo" src="" alt="Logo"/>--> 
+					</a> 
+					</header>
+				<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+			<!--/down-->
+							<div class="down">	
+									  <a href="index.html"><img src="images/admin.jpg"></a>
+									  <a href="index.html"><span class=" name-caret">Jasmin Leo</span></a>
+									 <p>System Administrator</p>
+									<ul>
+									<li><a class="tooltips" href="sprofile"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
+										<li><a class="tooltips" href="ssettings"><span>Settings</span><i class="lnr lnr-cog"></i></a></li>
+										<li><a class="tooltips" href="logout"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
+										</ul>
+									</div>
+							   <!--//down-->
+                                  <div class="menu">
+									<ul id="menu" >
+										
+																<li><a href="choosesub"><i class="fa fa-book"></i> <span>Choose Subject</span></a></li>
+								<li><a href="viewallins"><i class="fa fa-users"></i> <span>View All Instructors</span></a></li>
+										
+										<li><a href="addfeedback"><i class="fa fa-comment"></i> <span>Add Feedback</span></a></li>
+										<li><a href="atdexam"><i class="fa fa-book"></i> <span>Exam</span></a></li>
+																				<li><a href="changeins"><i class="fa fa-pencil"></i> <span>Choose Instructor</span></a></li>	
+																														<li><a href="allfeedback"><i class="fa fa-comment"></i> <span>View Feedback</span></a></li>		
+																																								<li><a href="sclass"><i class="lnr lnr-users"></i> <span>Class</span></a></li>
+																																								<li><a href="feedel"><i class="fa fa-inr"></i> <span>Fee Details</span></a></li>		
+															<li><a href="payment"><i class="fa fa-inr"></i> <span>Payment</span></a></li>					
+								 					
+								  </ul>
+								</div>
+							  </div>
+							  <div class="clearfix"></div>		
+							</div>
+							<script>
+							var toggle = true;
+										
+							$(".sidebar-icon").click(function() {                
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"});
+								}, 400);
+							  }
+											
+											toggle = !toggle;
+										});
+							</script>
+<!--js -->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smoth-scrolling -->
+	<script type="text/javascript" src="jss/bootstrap-3.1.1.min.js"></script>
+<script type="text/javascript">
+         jQuery(document).ready(function($) {  
+           $("#owl-demo").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : false,
+         	singleItem:true
+           });
+           $("#owl-demo2").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : true,
+         	singleItem:true
+           });
+         });       
+//name
+         
+         function namevalid(inputtxt) {
+     		
+     		var letters = /^[A-Za-z]+$/;
+     		var val = inputtxt.value.replace(/\s/g, '');
+     		document.getElementById('name1').innerHTML = ""
+     		  if (val.match(letters)) {
+     			 // document.getElementById('name1').style.display='none';
+
+     		  } else {
+     			 // document.getElementById('name1').style.display='block';
+     			 //alert("Not valid");
+     			 document.getElementById('name1').style.color = "red";
+     			 document.getElementById('name1').innerHTML = 'Invalid name'
+     			 document.getElementById('name').value = "";
+     			 document.getElementById('name').focus();
+     		  }
+     		
+     		}
+     		
+         function locvalid(inputtxt) {
+      		
+      		var letters = /^[A-Za-z]+$/;
+      		var val = inputtxt.value.replace(/\s/g, '');
+      		document.getElementById('loc1').innerHTML = ""
+      		  if (val.match(letters)) {
+      			 // document.getElementById('name1').style.display='none';
+
+      		  } else {
+      			 // document.getElementById('name1').style.display='block';
+      			 //alert("Not valid");
+      			 document.getElementById('loc1').style.color = "red";
+      			 document.getElementById('loc1').innerHTML = 'Invalid Location'
+      			 document.getElementById('loc').value = "";
+      			 document.getElementById('loc').focus();
+      		  }
+      		
+      		}
+         
+         // address
+         
+         function addvalid(inputtxt) {
+        		
+        		var letters = /^[A-Za-z0-9\-\.\(\)]+$/;
+        		var val = inputtxt.value.replace(/\s/g, '');
+        		 document.getElementById('add1').innerHTML = ""
+        		  if (val.match(letters)) {
+        			  document.getElementById('des1').style.display='none';
+
+        		  } 
+        		  else 
+        		  {
+        			  document.getElementById('add1').style.color = "red";
+          			  document.getElementById('add1').innerHTML = 'Invalid address'
+                 	  // document.getElementById('em').style.display='block';
+        			  document.getElementById('add').value = "";
+        			  document.getElementById('add').focus();
+        		  }
+        		
+        		}
+         // phone
+         
+        function phvalid(phone) {
+   
+  		
+        var y = document.getElementById('phone').value;
+        //alert("Phone number must be in numbers."+y);
+ 	   if(isNaN(y)||y.indexOf(" ")!=-1)
+ 	   {
+ 		  
+ 		  document.getElementById('ph1').style.color = "red";
+		  document.getElementById('ph1').innerHTML = 'Invalid number'
+ 		   document.getElementById('phone').focus();
+ 		 document.getElementById('phone').value = ""
+ 		// document.getElementById('ph').style.display='block';
+ 		//document.getElementById('ph1').style.display='none';
+ 	   }
+ 	  
+ 	   else if (y.length>16 || y.length<16)
+ 	   {
+ 		  document.getElementById('ph1').style.color = "red";
+		  document.getElementById('ph1').innerHTML = 'Card Number must be 16 digit'
+		   document.getElementById('phone').value = ""
+ 		  // document.getElementById('ph1').style.display='block';
+ 		 //document.getElementById('ph').style.display='none';
+ 		    document.getElementById('phone').focus();
+ 		   
+ 	   }
+ 	   else
+ 		   {
+ 		 
+			  document.getElementById('add1').innerHTML = ""
+ 	// document.getElementById('ph').style.display='none';
+ 	// document.getElementById('ph1').style.display='none';
+ 		   }
+    }
+        function cvvvalid(phone) {
+        	   
+      		
+            var y = document.getElementById('cvv').value;
+            //alert("Phone number must be in numbers."+y);
+     	   if(isNaN(y)||y.indexOf(" ")!=-1)
+     	   {
+     		  
+     		  document.getElementById('cvv1').style.color = "red";
+    		  document.getElementById('cvv1').innerHTML = 'Invalid number'
+     		   document.getElementById('cvv').focus();
+     		 document.getElementById('cvv').value = ""
+     		// document.getElementById('ph').style.display='block';
+     		//document.getElementById('ph1').style.display='none';
+     	   }
+     	  
+     	   else if (y.length>4 || y.length<4)
+     	   {
+     		  document.getElementById('cvv1').style.color = "red";
+    		  document.getElementById('cvv1').innerHTML = 'CVV must be 4 digit'
+    		   document.getElementById('cvv').value = ""
+     		  // document.getElementById('ph1').style.display='block';
+     		 //document.getElementById('ph').style.display='none';
+     		    document.getElementById('phone').focus();
+     		   
+     	   }
+     	   else
+     		   {
+     		 
+    			  document.getElementById('add1').innerHTML = ""
+     	// document.getElementById('ph').style.display='none';
+     	// document.getElementById('ph1').style.display='none';
+     		   }
+        }
+         //email
+         
+         function emvalid(emailfield) {
+       	  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+       	document.getElementById('email1').innerHTML = ""
+             if (reg.test(emailfield.value) == false) 
+             {
+            	 document.getElementById('email1').style.color = "red";
+     			 document.getElementById('email1').innerHTML = 'Enter a valid id'
+            	 // document.getElementById('em').style.display='block';
+           	     document.getElementById('email').value = ""
+         	     document.getElementById('email').focus();
+                 
+             }
+         }
+         
+         //Age 
+         function agevalid(age)
+     	{
+     		var age=document.getElementById('age').value;
+     		document.getElementById('age1').innerHTML = '';
+     		if(age == "") 
+     			{
+     			   document.getElementById('age1').innerHTML = '';
+     		    return true;
+     			}
+     		//check if age is a number or less than or greater than 100
+     		if (isNaN(age)||age<10||age>60)
+     		{ 
+     			  document.getElementById('age1').style.color = 'red';
+     			  document.getElementById('age1').innerHTML = 'Age must be a number between 1 and 100';
+     		
+     		      document.getElementById('age').value = "";
+     			  document.getElementById('age').focus();
+     		    
+     		    return false;
+     		}
+     	}
+         
+         // password
+         
+         function passwordChanged() {
+	var strength = document.getElementById('strength').value;
+	var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+	var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+	var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+	var pwd = document.getElementById('pwd');
+	if (pwd.value.length==0) {
+		 document.getElementById('strength').style.color = 'red';
+		    document.getElementById('strength').innerHTML = 'Type password';
+	} else if (false == enoughRegex.test(pwd.value)) {
+	strength.innerHTML ='More characters';
+	} else if (strongRegex.test(pwd.value)) {
+		 document.getElementById('strength').style.color = 'Blue';
+		    document.getElementById('strength').innerHTML = 'Strong!';
+	} else if (mediumRegex.test(pwd.value)) {
+		 document.getElementById('strength').style.color = 'Orange';
+		    document.getElementById('strength').innerHTML = 'Medium!';
+	} else {
+		 document.getElementById('strength').style.color = 'red';
+		    document.getElementById('strength').innerHTML = 'Weak!';
+	}
+	}
+         
+         // confirm password
+         
+         var check = function() {
+	  if (document.getElementById('pwd').value ==
+	    document.getElementById('cpwd').value) {
+	    document.getElementById('message').style.color = 'green';
+	    document.getElementById('message').innerHTML = 'Matching';
+	  } else {
+	    document.getElementById('message').style.color = 'red';
+	    document.getElementById('message').innerHTML = 'Not matching';
+	  }
+	}
+      </script> 
+</body>
+</html>
