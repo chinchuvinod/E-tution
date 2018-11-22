@@ -1,0 +1,361 @@
+    <%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interior Register Form Responsive Widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Interior Register Form Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<link href="css1/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css1/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+</head>
+<body>
+<div class="signupform">
+<h1>Teacher's Register Form</h1>
+	<div class="container">
+		
+		<div class="agile_info">
+			<div class="w3l_form">
+				<div class="left_grid_info">
+					<h3>Welcome !</h3>
+					<h4>The Mediocre Teacher Tells.</h4>
+					<h4>The Good Teacher Explains.</h4>
+					<h4>The Superior Teacher Demonstrates.</h4>
+					<h4>The Great Teacher Inspires</h4>
+					<p><h3> Teachers have three loves:love of learning, love of learners, and the love of bringing the first two loves together.</h3></p>
+					<p><h2>A good teacher is like a candle it consumes itself to light the way for others. </h2></p>
+					<ul class="social_section_1info">
+						<li><a href="#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="w3_pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" class="w3_vimeo"><i class="fa fa-vimeo"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="w3_info">
+				<h2>Create An Account</h2>
+				
+						<form action="treg" method="post" enctype="multipart/form-data">
+						<div class="input-group">
+							<span><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" id = "name" onchange="namevalid(this);" placeholder=" Name" required="" name="name"> 
+						</div>
+						<span id ="name1"></span>
+						<div class="input-group">
+							<span><i class="fa fa-phone" aria-hidden="true" style="color: #01cd74;"></i></span>
+							<input type="text" placeholder="Phone" required="" name="mno" id ="phone" onchange="phvalid(this);"> 
+						</div>
+									<span id ="ph1"></span>
+						<div class="input-group">
+							<span><i class="fa fa-envelope" aria-hidden="true" ></i></span>
+							<input type="email" placeholder="Email" required="" name="email" id ="email" onchange="emvalid(this);"> 
+						</div>
+						<span id ="email1"></span>
+						<div class="">
+							<span><i class="fa fa-graduation-cap" aria-hidden="true" style="color: #01cd74;"></i></span>
+							<select style="width: 302px;height: 34px;" name="qual">
+							<option>select qualification</option><c:forEach var="i" items="${vq }">
+							<option>${i.qual }</option></c:forEach>
+							</select>
+						</div><br>
+												<div class="">
+							<span><i class="fa fa-calendar" aria-hidden="true" style="color: #01cd74;"></i></span>
+							<select style="width: 307px;height: 34px;" name="exp">
+								<option>Year Of Experience In Teaching</option>
+							<option>Less Than a Year</option>
+								<option>Less Than 2 Year</option>
+									<option>Less Than 4 Year</option>
+										<option>More Than 5 Year</option>
+							</select>
+						</div><br>
+												<div class="">
+							<span><i class="fa fa-book" aria-hidden="true" style="color: #01cd74;"></i></span>
+<select name="subject" style="width: 302px;height: 34px;">
+							<c:forEach var="i" items="${vs}">
+							<option>${i.subject }</option>
+							</c:forEach>
+							</select>
+						</div><br>
+						
+												<div class="">
+							<span><i class="fa fa-graduation-cap" aria-hidden="true" style="color: #01cd74;"></i></span>
+							<select style="width: 302px;height: 34px;" name="board">
+								<c:forEach var="i" items="${vb}">
+							<option>${i.board}</option></c:forEach>
+							</select>
+						</div><br>
+						
+											<!--  	<div class="">
+							<span><i class="fa fa-clock-o" aria-hidden="true" style="color: #01cd74;"></i></span>
+		
+							<select style="width: 308px;height: 34px;" name="time">
+								<option>Choose Timing</option>
+							<option>6-7 am</option>
+								<option>7-8 am</option>
+									<option>8-9 am</option>
+										<option>9-10 am</option>
+										<option>10-11 am</option>
+								<option>11-12 am</option>
+									<option>12-1 pm</option>
+										<option>1-2 pm</option>
+										<option>2-3 pm</option>
+										<option>3-4 pm</option>
+										<option>4-5 pm</option>
+										<option>5-6 pm</option>
+										<option>6-7 pm</option>
+										<option>7-8 pm</option>
+										<option>8-9 pm</option>
+										<option>9-10 pm</option>
+							</select>
+						</div>--><br>
+						
+												<div class="">
+							<span><i class="fa fa-tasks" aria-hidden="true"  style="color: #01cd74;"></i></span>
+							<select style="width: 302px;height: 34px;" name="occupation">
+								<option>Current Occupation</option>
+							<option>Full-time Teacher</option>
+								<option>Freelancer</option>
+									<option>Working Professional</option>
+										<option>College Student</option>
+										<option>Not Working</option>
+								<option>Other</option>
+								
+							</select>
+						</div><br>
+						<div class="">
+							<span><i class="fa fa-calendar" aria-hidden="true"  style="color: #01cd74;"></i></span>
+							<input type="date" style="width: 302px;height: 34px;" name="dob" placeholder="Year Of Experience In Teaching" required="">
+						</div><br>
+						<div class="input-group">
+							<span><i class="fa fa-home" aria-hidden="true"  style="color: #01cd74;"></i></span>
+							<input id ="loc" onchange="locvalid(this);" type="text" placeholder="Location" required="" name="location">
+						</div>
+						<span id ="loc1"></span>
+						<div class="input-group">
+							<span><i class="fa fa-file" aria-hidden="true"  style="color: #01cd74;"></i></span>
+							<input type="file" placeholder="resume" required="" name="resume">
+						</div>
+						<div class="input-group">
+							<span><i class="fa fa-image" aria-hidden="true"  style="color: #01cd74;"></i></span>
+							<input type="file" placeholder="photo" required="" name="photo">
+						</div>
+								<div class="input-group">
+							<span><i class="fa fa-user" aria-hidden="true"  style="color: #01cd74;"></i></span>
+							<input type="text" placeholder="username" required="" name="uname">
+						</div>
+						<div class="input-group">
+							<span><i class="fa fa-lock" aria-hidden="true"  style="color: #01cd74;"></i></span>
+							<input type="Password" placeholder=" Password" required="" name="password">
+						</div>
+							
+							<button class="btn btn-danger btn-block" type="submit">Create Account</button >                
+					<br>
+					<a href="home">Back Home</a>
+					</form>
+			</div>
+			<div class="clear"></div>
+			</div>
+			
+		</div>
+		<div class="footer">
+
+ <p>&copy; Interior Register form 2018. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="blank">W3layouts</a></p>
+ </div>
+	</div>
+	  <script type="text/javascript">
+         jQuery(document).ready(function($) {  
+           $("#owl-demo").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : false,
+         	singleItem:true
+           });
+           $("#owl-demo2").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : true,
+         	singleItem:true
+           });
+         });       
+//name
+         
+         function namevalid(inputtxt) {
+     		
+     		var letters = /^[A-Za-z]+$/;
+     		var val = inputtxt.value.replace(/\s/g, '');
+     		document.getElementById('name1').innerHTML = ""
+     		  if (val.match(letters)) {
+     			 // document.getElementById('name1').style.display='none';
+
+     		  } else {
+     			 // document.getElementById('name1').style.display='block';
+     			 //alert("Not valid");
+     			 document.getElementById('name1').style.color = "red";
+     			 document.getElementById('name1').innerHTML = 'Invalid name'
+     			 document.getElementById('name').value = "";
+     			 document.getElementById('name').focus();
+     		  }
+     		
+     		}
+     		
+         function locvalid(inputtxt) {
+      		
+      		var letters = /^[A-Za-z]+$/;
+      		var val = inputtxt.value.replace(/\s/g, '');
+      		document.getElementById('loc1').innerHTML = ""
+      		  if (val.match(letters)) {
+      			 // document.getElementById('name1').style.display='none';
+
+      		  } else {
+      			 // document.getElementById('name1').style.display='block';
+      			 //alert("Not valid");
+      			 document.getElementById('loc1').style.color = "red";
+      			 document.getElementById('loc1').innerHTML = 'Invalid Location'
+      			 document.getElementById('loc').value = "";
+      			 document.getElementById('loc').focus();
+      		  }
+      		
+      		}
+         
+         // address
+         
+         function addvalid(inputtxt) {
+        		
+        		var letters = /^[A-Za-z0-9\-\.\(\)]+$/;
+        		var val = inputtxt.value.replace(/\s/g, '');
+        		 document.getElementById('add1').innerHTML = ""
+        		  if (val.match(letters)) {
+        			  document.getElementById('des1').style.display='none';
+
+        		  } 
+        		  else 
+        		  {
+        			  document.getElementById('add1').style.color = "red";
+          			  document.getElementById('add1').innerHTML = 'Invalid address'
+                 	  // document.getElementById('em').style.display='block';
+        			  document.getElementById('add').value = "";
+        			  document.getElementById('add').focus();
+        		  }
+        		
+        		}
+         // phone
+         
+        function phvalid(phone) {
+   
+  		
+        var y = document.getElementById('phone').value;
+        //alert("Phone number must be in numbers."+y);
+ 	   if(isNaN(y)||y.indexOf(" ")!=-1)
+ 	   {
+ 		  
+ 		  document.getElementById('ph1').style.color = "red";
+		  document.getElementById('ph1').innerHTML = 'Invalid number'
+ 		   document.getElementById('phone').focus();
+ 		 document.getElementById('phone').value = ""
+ 		// document.getElementById('ph').style.display='block';
+ 		//document.getElementById('ph1').style.display='none';
+ 	   }
+ 	  
+ 	   else if (y.length>10 || y.length<10)
+ 	   {
+ 		  document.getElementById('ph1').style.color = "red";
+		  document.getElementById('ph1').innerHTML = 'Phone number must be 10 digit'
+		   document.getElementById('phone').value = ""
+ 		  // document.getElementById('ph1').style.display='block';
+ 		 //document.getElementById('ph').style.display='none';
+ 		    document.getElementById('phone').focus();
+ 		   
+ 	   }
+ 	   else
+ 		   {
+ 		 
+			  document.getElementById('add1').innerHTML = ""
+ 	// document.getElementById('ph').style.display='none';
+ 	// document.getElementById('ph1').style.display='none';
+ 		   }
+    }
+         //email
+         
+         function emvalid(emailfield) {
+       	  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+       	document.getElementById('email1').innerHTML = ""
+             if (reg.test(emailfield.value) == false) 
+             {
+            	 document.getElementById('email1').style.color = "red";
+     			 document.getElementById('email1').innerHTML = 'Enter a valid id'
+            	 // document.getElementById('em').style.display='block';
+           	     document.getElementById('email').value = ""
+         	     document.getElementById('email').focus();
+                 
+             }
+         }
+         
+         //Age 
+         function agevalid(age)
+     	{
+     		var age=document.getElementById('age').value;
+     		document.getElementById('age1').innerHTML = '';
+     		if(age == "") 
+     			{
+     			   document.getElementById('age1').innerHTML = '';
+     		    return true;
+     			}
+     		//check if age is a number or less than or greater than 100
+     		if (isNaN(age)||age<10||age>60)
+     		{ 
+     			  document.getElementById('age1').style.color = 'red';
+     			  document.getElementById('age1').innerHTML = 'Age must be a number between 1 and 100';
+     		
+     		      document.getElementById('age').value = "";
+     			  document.getElementById('age').focus();
+     		    
+     		    return false;
+     		}
+     	}
+         
+         // password
+         
+         function passwordChanged() {
+	var strength = document.getElementById('strength').value;
+	var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+	var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+	var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+	var pwd = document.getElementById('pwd');
+	if (pwd.value.length==0) {
+		 document.getElementById('strength').style.color = 'red';
+		    document.getElementById('strength').innerHTML = 'Type password';
+	} else if (false == enoughRegex.test(pwd.value)) {
+	strength.innerHTML ='More characters';
+	} else if (strongRegex.test(pwd.value)) {
+		 document.getElementById('strength').style.color = 'Blue';
+		    document.getElementById('strength').innerHTML = 'Strong!';
+	} else if (mediumRegex.test(pwd.value)) {
+		 document.getElementById('strength').style.color = 'Orange';
+		    document.getElementById('strength').innerHTML = 'Medium!';
+	} else {
+		 document.getElementById('strength').style.color = 'red';
+		    document.getElementById('strength').innerHTML = 'Weak!';
+	}
+	}
+         
+         // confirm password
+         
+         var check = function() {
+	  if (document.getElementById('pwd').value ==
+	    document.getElementById('cpwd').value) {
+	    document.getElementById('message').style.color = 'green';
+	    document.getElementById('message').innerHTML = 'Matching';
+	  } else {
+	    document.getElementById('message').style.color = 'red';
+	    document.getElementById('message').innerHTML = 'Not matching';
+	  }
+	}
+      </script> 
+	</body>
+</html>
