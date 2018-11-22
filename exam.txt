@@ -1,0 +1,266 @@
+  <%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Augment an Admin Panel Category Flat Bootstrap Responsive Web Template | Forms :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!--clock init-->
+<script src="js/css3clock.js"></script>
+<!--Easy Pie Chart-->
+<!--skycons-icons-->
+<script src="js/skycons.js"></script>
+<!--//skycons-icons-->
+</head> 
+<body>
+ <div class="page-container">
+   <!--/content-inner-->
+	<div class="left-content">
+	   <div class="inner-content">
+		<!-- header-starts -->
+			<div class="header-section">
+						<!--menu-right-->
+						<div class="top_menu">
+						    
+									
+									<script type="text/javascript">
+										 $('.main-search').hide();
+										$('button').click(function (){
+											$('.main-search').show();
+											$('.main-search text').focus();
+										}
+										);
+										$('.close').click(function(){
+											$('.main-search').hide();
+										});
+									</script>
+							<!--/profile_details-->
+								<div class="profile_details_left">
+									<ul class="nofitications-dropdown">
+											<li class="dropdown note dra-down">
+													   <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+												
+																		</div>
+																		<script type="text/javascript">
+			
+																	function DropDown(el) {
+																		this.dd = el;
+																		this.placeholder = this.dd.children('span');
+																		this.opts = this.dd.find('ul.dropdown > li');
+																		this.val = '';
+																		this.index = -1;
+																		this.initEvents();
+																	}
+																	DropDown.prototype = {
+																		initEvents : function() {
+																			var obj = this;
+
+																			obj.dd.on('click', function(event){
+																				$(this).toggleClass('active');
+																				return false;
+																			});
+
+																			obj.opts.on('click',function(){
+																				var opt = $(this);
+																				obj.val = opt.text();
+																				obj.index = opt.index();
+																				obj.placeholder.text(obj.val);
+																			});
+																		},
+																		getValue : function() {
+																			return this.val;
+																		},
+																		getIndex : function() {
+																			return this.index;
+																		}
+																	}
+
+																	$(function() {
+
+																		var dd = new DropDown( $('#dd') );
+
+																		$(document).click(function() {
+																			// all dropdowns
+																			$('.wrapper-dropdown-3').removeClass('active');
+																		});
+
+																	});
+
+																</script>
+										    </li>
+									       
+							
+								   							   		
+							<div class="clearfix"></div>	
+								</ul>
+							</div>
+							<div class="clearfix"></div>	
+							<!--//profile_details-->
+						</div>
+						<!--//menu-right-->
+					<div class="clearfix"></div>
+				</div>
+
+						<!-- //header-ends -->
+							<!--//outer-wp-->
+								<div class="outter-wp">
+											<!--/sub-heard-part-->
+											 <div class="sub-heard-part">
+													   <ol class="breadcrumb m-b-0">
+															<li><a href="index.html">Home</a></li>
+															<li class="active">Forms</li>
+														</ol>
+											</div>	
+											<!--/sub-heard-part-->	
+												<!--/forms-->
+													<div class="forms-main">
+			
+																<!--/forms-inner-->
+													  				<div class="forms-inner">
+																	  <!--/set-1-->
+																		<div class="set-1">
+																			<div class="col-md-6 graph-2">
+																				
+																					<div class="grid-1">
+																							<div class="form-body">
+																										<form class="form-horizontal" action="viewques">
+ 
+																										    <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Choose Exam Type</label>
+																										      <div class="col-sm-9"> 
+																										       <select class="form-control"   name="type" style="height: 45px;">
+																									
+																										  <option>Modular</option>
+								                                                                     <option>Series</option>
+									                                                                             <option>Final</option>
+										                             
+																										  </select>
+							                                                
+																										      </div> 
+																										      </div>
+																										         <div class="form-group">
+																										     <label for="inputPassword3" class="col-sm-2 control-label">Subject</label>
+																										      <div class="col-sm-9"> 
+																										       <select class="form-control"   name="subject" style="height: 45px;">
+																										  <option>${sub }</option>
+																										  <c:forEach var="i" items="${vs }">
+																										  <option>${i.subject }</option>
+																										  </c:forEach>
+																										  
+																										  </select>
+																										      </div> 
+																										      </div>
+																										        
+																										        <div class="col-sm-offset-2"> 
+																										         <button type="submit" class="btn btn-default">View Questions</button>
+																										          </div> 
+																										          </form> 
+																							</div>
+
+																					</div>
+																				</div>
+																				
+																				 <div class="clearfix"> </div>
+																			</div>
+																			 <!--//set-1-->
+																			  <!--/set-2-->
+
+																			<!--//set-3-->
+																			<!--/set-4-->
+										
+																		   <!--//set-4-->
+																		</div>
+																	<!--//forms-inner-->
+																</div> 
+														<!--//forms-->											   
+												</div>
+											<!--//outer-wp-->
+									 <!--footer section start-->
+										
+									<!--footer section end-->
+								</div>
+							</div>
+				<!--//content-inner-->
+			<!--/sidebar-menu-->
+				<div class="sidebar-menu">
+					<header class="logo">
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span id="logo"> <h1>INSIGHT</h1></span> 
+						<!--<img id="logo" src="" alt="Logo"/>--> 
+					</a> 
+					</header>
+				<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+			<!--/down-->
+							<div class="down">	
+									  <a href="index.html"><img src="images/admin.jpg"></a>
+									  <a href="index.html"><span class=" name-caret">Jasmin Leo</span></a>
+									 <p>System Administrator</p>
+									<ul>
+									<li><a class="tooltips" href="sprofile"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
+										<li><a class="tooltips" href="ssettings"><span>Settings</span><i class="lnr lnr-cog"></i></a></li>
+										<li><a class="tooltips" href="logout"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
+										</ul>
+									</div>
+							   <!--//down-->
+                                  <div class="menu">
+									<ul id="menu" >
+																										<li><a href="choosesub"><i class="fa fa-book"></i> <span>Choose Subject</span></a></li>
+										
+								<li><a href="viewallins"><i class="fa fa-users"></i> <span>View All Instructors</span></a></li>
+										
+										<li><a href="addfeedback"><i class="fa fa-comment"></i> <span>Add Feedback</span></a></li>
+										<li><a href="atdexam"><i class="fa fa-book"></i> <span>Exam</span></a></li>
+																				<li><a href="changeins"><i class="fa fa-pencil"></i> <span>Choose Instructor</span></a></li>	
+																														<li><a href="allfeedback"><i class="fa fa-comment"></i> <span>View Feedback</span></a></li>		
+																																								<li><a href="sclass"><i class="lnr lnr-users"></i> <span>Class</span></a></li>
+<li><a href="feedel"><i class="fa fa-inr"></i> <span>Fee Details</span></a></li>		
+															<li><a href="payment"><i class="fa fa-inr"></i> <span>Payment</span></a></li>					
+								 				
+								  </ul>
+								</div>
+							  </div>
+							  <div class="clearfix"></div>		
+							</div>
+							<script>
+							var toggle = true;
+										
+							$(".sidebar-icon").click(function() {                
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"});
+								}, 400);
+							  }
+											
+											toggle = !toggle;
+										});
+							</script>
+<!--js -->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
